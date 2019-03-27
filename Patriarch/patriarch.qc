@@ -1,0 +1,606 @@
+// Saved directory for model when initialized in game. If this is changed after the model is compiled it will make an error
+$ModelName "cpthazama/kf2/patriarch.mdl"
+
+// Makes it scaled to Garry's Mod standards
+$Scale 0.4
+
+// This is where you will add bodygroups
+$BodyGroup "studio"
+{
+	studio "pat_reference.smd"
+}
+
+$definebone "Root" "" 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "hips" "Root" 0.000000 1.568476 46.710041 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "RightUpLeg" "hips" -6.337751 -1.571044 0.000000 80.172661 -143.344315 137.492813 -0.000004 0.000000 0.000000 -0.000011 180.000000 -180.000000
+$definebone "RightLeg" "RightUpLeg" 21.493607 0.000000 0.000000 -22.741945 -0.000018 0.000004 0.000000 -0.000001 0.000000 -0.000020 -180.000000 180.000000
+$definebone "RightFoot" "RightLeg" 21.140652 -0.000001 0.000001 -15.359088 173.131180 -175.364090 0.000000 -0.000001 0.000000 0.000000 -0.000001 -0.000001
+$definebone "LeftUpLeg" "hips" 10.735513 2.464225 0.000000 75.967331 -89.999985 -179.999985 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000
+$definebone "LeftLeg" "LeftUpLeg" 21.493586 0.000000 0.000000 -27.726402 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000
+$definebone "LeftFoot" "LeftLeg" 21.167023 0.000001 0.000001 13.693690 -0.000057 -0.000057 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000
+$definebone "RightToeBase" "RightFoot" -3.724964 -0.000002 8.295536 -89.999985 0.000001 0.000000 0.000000 -0.000001 0.000000 -0.000000 -0.000001 0.000001
+$definebone "RightUpLegTwist1" "RightUpLeg" 2.399994 0.000000 0.000000 0.000011 180.000000 -179.999939 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+$definebone "LeftAnklePistonRZ" "LeftFoot" -2.021362 0.019472 6.962655 -52.637749 179.999863 -89.999870 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+$definebone "LeftAnklePistonRX" "LeftAnklePistonRZ" 2.458067 -0.000002 -0.000001 -0.000000 -0.000056 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "LeftAnklePiston" "LeftAnklePistonRX" 2.356876 0.000003 0.000001 0.016444 -91.324547 0.054488 -0.000000 0.000000 -0.000001 -0.000000 -0.000004 0.000000
+$definebone "LeftFootIndex1" "LeftFoot" 3.654864 4.845924 -6.521235 56.277451 90.000069 -180.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "LeftFootMiddle1" "LeftFoot" 2.965411 0.019474 -7.594923 89.999985 -89.999931 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000
+$definebone "LeftFootRing1" "LeftFoot" 3.654867 -4.806956 -6.521234 56.277348 -89.999985 -0.000000 -0.000001 0.000000 0.000000 -0.000000 0.000000 -0.000000
+$definebone "LeftFootExtraFinger1" "LeftFoot" 4.316920 0.019475 10.726963 -89.999985 -89.999985 0.000000 0.000000 -0.000000 0.000001 0.000000 -0.000000 0.000000
+$definebone "LeftAnkleLeftPiston1" "LeftLeg" 18.037804 -3.967966 -3.198000 33.781075 29.909372 -44.555141 0.000000 0.000000 0.000000 -0.000002 -0.000006 -0.000002
+$definebone "LeftAnkleLeftPistonMotor1" "LeftAnkleLeftPiston1" 7.748950 0.000000 -0.000002 -0.000002 -0.000006 -0.000002 0.000000 0.000000 0.000001 -0.000002 -0.000006 -0.000002
+$definebone "LeftAnkleRightPiston1" "LeftLeg" 18.037807 4.006911 -3.198004 33.781021 -29.909313 -135.445328 0.000000 0.000000 0.000000 -0.000000 0.000001 0.000005
+$definebone "LeftAnkleRightPistonMotor1" "LeftAnkleRightPiston1" 7.748944 0.000000 -0.000002 -0.000000 0.000001 0.000005 0.000000 0.000000 0.000000 -0.000000 0.000001 0.000005
+$definebone "LeftAnkleLeftPiston2" "LeftLeg" 18.359112 -4.830153 -1.879297 -19.079498 6.741136 62.672470 0.000000 0.000000 0.000000 0.000000 0.000005 0.000003
+$definebone "LeftAnkleLeftPistonMotor2" "LeftAnkleLeftPiston2" 7.761256 0.000002 -0.000001 0.000000 0.000005 0.000003 -0.000000 0.000000 0.000000 0.000000 0.000005 0.000003
+$definebone "LeftAnkleRightPiston2" "LeftLeg" 18.359112 4.869096 -1.879302 -19.079437 -6.740963 117.327095 0.000000 0.000000 -0.000000 -0.000000 0.000004 0.000000
+$definebone "LeftAnkleRightPistonMotor2" "LeftAnkleRightPiston2" 7.761271 0.000001 -0.000000 -0.000000 0.000004 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000004 0.000000
+$definebone "LeftAnkleLeftPiston3" "LeftLeg" 20.058853 -0.573011 5.179607 25.802467 -33.045570 -148.933853 -0.000000 0.000000 -0.000001 0.000002 0.000002 0.000002
+$definebone "LeftAnkleLeftPistonMotor3" "LeftAnkleLeftPiston3" 7.777725 0.000001 0.000001 0.000002 0.000002 0.000002 0.000000 0.000000 0.000001 0.000002 0.000002 0.000002
+$definebone "LeftAnkleRightPiston3" "LeftLeg" 20.058847 0.611977 5.179608 25.802525 33.045460 -31.067549 -0.000001 0.000000 0.000000 -0.000002 0.000000 0.000000
+$definebone "LeftAnkleRightPistonMotor3" "LeftAnkleRightPiston3" 7.777731 0.000001 -0.000001 -0.000002 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000002 0.000000 0.000000
+$definebone "LeftAnklePistonShaft" "LeftLeg" 3.380627 0.014656 5.266706 -22.344044 0.017819 90.047600 0.000000 0.000000 0.000000 0.000000 0.000003 -0.000000
+$definebone "LeftKneeArm" "LeftLeg" -2.429155 -0.002357 -4.314677 -24.772575 179.974350 -89.894218 -0.000002 0.000000 0.000000 -0.000000 -0.000000 0.000000
+$definebone "LeftLegPiston" "LeftUpLeg" 12.828278 0.000000 -0.806496 -57.888737 0.232220 89.806381 -0.000002 0.000002 0.000001 0.000000 0.000000 0.000000
+$definebone "LeftLegPistonShaft" "LeftLegPiston" 9.041143 -0.000004 0.000004 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+$definebone "LeftKneePiston" "LeftUpLeg" 1.248932 0.000000 -0.919179 16.802561 -0.000057 -90.000038 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000
+$definebone "LeftKneePistonShaft" "LeftKneePiston" 14.971561 -0.000002 0.000003 0.000000 0.000000 -0.000000 0.000002 0.000000 0.000000 0.000000 0.000000 -0.000000
+$definebone "LeftKneeSidePiston" "LeftUpLeg" 7.982647 5.909475 1.727934 -19.774605 -0.000000 -90.000153 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "LeftKneeSidePistonShaft" "LeftKneeSidePiston" 6.227545 0.000000 -0.000001 -0.000000 0.000000 0.000000 -0.000002 0.000000 -0.000000 -0.000000 0.000000 0.000000
+$definebone "LeftKneeSideArm" "LeftUpLeg" 21.511145 5.909473 0.008036 -26.521416 179.999985 -89.999985 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000
+$definebone "Spine" "hips" 0.000000 0.000000 9.847279 -82.644409 -90.000153 -89.999985 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000
+$definebone "Spine1" "Spine" 8.520672 0.000000 0.000000 0.000000 14.724901 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000
+$definebone "Spine2" "Spine1" 8.703194 0.000004 -0.000000 -10.569927 36.303867 -4.675335 -0.000004 0.000000 0.000000 -0.000003 0.000004 -0.000001
+$definebone "neck" "Spine2" 9.902573 0.000004 0.000004 0.151375 27.751326 0.037297 0.000000 0.000000 -0.000001 -0.000001 0.000002 -0.000003
+$definebone "head" "neck" 6.792717 0.000000 0.000001 9.464746 -86.225906 -6.426294 0.000000 0.000000 0.000000 0.000001 -0.000001 0.000000
+$definebone "Jaw" "head" -1.392860 2.257965 0.284128 -0.000019 90.000015 -180.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_LowerLip" "Jaw" 2.994982 -2.254799 -1.096128 -0.000000 -0.000001 0.000001 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Lip_Lower" "Jaw" 3.465313 -2.558723 0.000004 -0.000000 -0.000001 0.000001 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_LowerLip" "Jaw" 2.994984 -2.254807 1.096136 -0.000000 -0.000001 0.000001 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_Eyebrow" "head" 1.480797 6.404072 1.373606 -0.000019 90.000015 -180.000000 0.000000 0.000008 0.000000 -0.000000 -0.000001 0.000001
+$definebone "EyeBrow" "head" 1.531555 6.498594 0.284125 -0.000019 90.000015 -180.000000 0.000000 0.000008 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_Eyebrow" "head" 1.480797 6.404079 -0.805361 -0.000019 90.000015 -180.000000 0.000000 0.000008 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_TopEyelid" "head" 0.667389 5.141680 1.831828 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_TopEyelid" "head" 0.614731 5.496660 -1.248171 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_Eye" "head" 0.710670 5.256491 1.831828 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_Eye" "head" 0.658173 5.611481 -1.248171 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_BottomEyelid" "head" 0.754036 5.141685 1.831828 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_BottomEyelid" "head" 0.701385 5.496668 -1.248171 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_UpperLip" "head" -2.125237 5.778341 1.384511 -0.000019 90.000015 -180.000000 0.000000 0.000008 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Lip_Upper" "head" -1.910706 6.118841 0.284123 -0.000019 90.000015 -180.000000 0.000000 0.000008 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_UpperLip" "head" -2.125237 5.778341 -0.816265 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Left_LipCorner" "head" -2.854393 5.045576 1.867964 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "Right_LipCorner" "head" -2.854393 5.045578 -1.299716 -0.000019 90.000015 -180.000000 0.000000 0.000000 0.000000 -0.000000 -0.000001 0.000001
+$definebone "RightShoulder" "Spine2" 4.422089 5.016514 -2.511850 -69.454414 85.208611 -142.558258 0.000000 0.000000 0.000000 0.000002 0.000001 0.000003
+$definebone "RightArm" "RightShoulder" -15.871914 -0.000001 0.000008 54.421936 57.331917 63.833801 0.000000 -0.000002 -0.000004 -0.000003 -0.000006 0.000002
+$definebone "RightForearm" "RightArm" -15.703442 0.000008 0.000008 -0.000005 -31.678896 0.000002 0.000000 -0.000000 0.000004 -0.000005 -0.000002 0.000002
+$definebone "RightHand" "RightForearm" -20.006641 -0.000000 -0.000023 24.086174 -1.869678 4.820982 0.000000 0.000000 -0.000004 -0.000000 -0.000002 0.000002
+$definebone "RightInHandPinky" "RightHand" -1.452271 -2.996635 0.107113 -6.507885 10.174009 88.425209 0.000002 0.000000 0.000000 -0.000002 0.000000 -0.000002
+$definebone "RightHandPinky1" "RightInHandPinky" -6.531122 0.000004 0.000000 0.053741 -19.891609 -3.089218 0.000000 0.000000 0.000000 -0.000002 -0.000003 -0.000001
+$definebone "RightHandPinky2" "RightHandPinky1" -4.101234 0.000000 -0.000002 -0.000002 -29.818512 0.000058 0.000004 -0.000002 0.000000 -0.000001 -0.000015 0.000000
+$definebone "RightHandPinky3" "RightHandPinky2" -4.183224 0.000002 -0.000003 0.000000 -50.569145 0.000002 0.000000 0.000000 0.000001 0.000000 -0.000003 0.000002
+$definebone "RightInHandRing" "RightHand" -1.957695 -0.643015 -0.734600 -3.792121 3.255028 88.410141 0.000000 0.000000 0.000000 -0.000002 0.000000 -0.000001
+$definebone "RightHandRing1" "RightInHandRing" -6.730261 0.000004 0.000002 1.246524 -14.154065 -5.459143 0.000000 0.000004 0.000000 -0.000002 -0.000001 0.000001
+$definebone "RightHandRing2" "RightHandRing1" -5.753525 0.000015 -0.000000 -0.000000 -41.294048 0.000060 0.000000 -0.000002 -0.000000 -0.000001 -0.000005 0.000003
+$definebone "RightHandRing3" "RightHandRing2" -4.705921 0.000004 -0.000000 0.000001 -38.292030 0.000002 -0.000004 0.000002 0.000000 0.000001 -0.000003 0.000002
+$definebone "RightInHandIndex" "RightHand" -1.839916 1.784160 -0.492363 -6.572170 -10.829191 88.430191 0.000000 0.000000 0.000000 -0.000001 0.000002 -0.000002
+$definebone "RightHandIndex1" "RightInHandIndex" -6.856220 -0.000004 0.000000 0.790221 -19.197582 -7.490335 0.000000 0.000000 0.000000 -0.000002 0.000001 -0.000002
+$definebone "RightHandIndex2" "RightHandIndex1" -5.979565 0.000008 0.000000 -0.000003 -30.457521 -0.000001 0.000000 0.000000 0.000000 -0.000003 0.000000 -0.000001
+$definebone "RightHandIndex3" "RightHandIndex2" -5.349667 -0.000002 -0.000001 0.000054 -53.267662 0.000001 0.000000 0.000000 0.000000 -0.000003 -0.000005 0.000002
+$definebone "RightHandThumb1" "RightHand" -1.675900 2.803569 1.129158 9.250121 -69.319359 154.619019 0.000000 0.000000 0.000000 -0.000001 -0.000004 -0.000002
+$definebone "RightHandThumb2" "RightHandThumb1" -4.635305 -0.000004 -0.000004 -0.000003 -50.642311 0.000057 -0.000004 0.000000 0.000000 -0.000002 -0.000003 0.000000
+$definebone "RightHandThumb3" "RightHandThumb2" -4.261925 0.000004 0.000006 -0.000003 -40.813152 0.000002 0.000000 0.000000 0.000002 -0.000003 0.000008 0.000002
+$definebone "RightForeArmTwist1" "RightForearm" -14.000002 -0.000001 -0.000008 -0.000005 -0.000002 0.000002 0.000002 0.000000 0.000000 -0.000005 -0.000002 0.000002
+$definebone "RightArmTwist1" "RightArm" -2.400005 0.000008 0.000000 -0.000290 -0.000005 0.000002 0.000000 0.000000 -0.000004 -0.000003 -0.000005 0.000002
+$definebone "RightArmSpike" "RightArm" -3.950794 4.830971 -1.965221 70.949478 162.156448 -75.621094 0.000000 0.000000 0.000000 -0.000001 -0.000002 0.000000
+$definebone "RightArmSpike1" "RightArmSpike" 8.719170 0.000008 0.000001 -0.000001 -0.000002 0.000000 0.000000 0.000004 0.000000 -0.000001 -0.000002 0.000000
+$definebone "RightArmSpike2" "RightArmSpike1" 9.668282 0.000004 0.000000 -0.000001 -0.000002 0.000000 0.000000 0.000000 0.000000 -0.000001 -0.000002 0.000000
+$definebone "RightArmSpike3" "RightArmSpike2" 10.813171 0.000000 0.000000 -0.000001 -0.000002 0.000000 0.000000 0.000000 0.000000 -0.000001 -0.000002 0.000000
+$definebone "RightArmSpike4" "RightArmSpike3" 13.904510 0.000000 0.000003 -0.000001 0.000055 0.000000 0.000000 0.000000 0.000000 -0.000001 -0.000002 0.000000
+$definebone "LeftShoulder" "Spine2" 5.909225 4.366936 5.431228 -71.141647 -84.656464 -155.962097 0.000001 0.000000 0.000000 -0.000001 0.000000 0.000001
+$definebone "LeftArm" "LeftShoulder" 17.112755 -0.000001 0.000000 72.132156 -129.536224 -115.927971 0.000008 0.000000 0.000000 0.000000 -0.000002 0.000000
+$definebone "LeftForearm" "LeftArm" 22.134911 0.000002 -0.000002 0.000057 -73.831917 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000002 -0.000000
+$definebone "BarrelSpinner" "LeftForearm" 35.123951 0.149330 -0.018415 0.000000 -0.000056 89.817558 0.000000 0.000000 0.000000 0.000002 -0.000000 0.000000
+$definebone "MagazineTrail" "LeftForearm" 19.298832 20.340832 -0.018396 0.000000 0.000059 89.817558 0.000000 0.000000 0.000000 0.000002 -0.000000 0.000000
+$definebone "LeftArmPistonShaft" "LeftForearm" 3.865827 -7.075157 -0.018417 -0.000057 33.004269 -179.999969 -0.000002 0.000000 0.000000 -0.000000 -0.000001 -0.000000
+$definebone "LeftMissileTrap000" "LeftForearm" 12.677275 -6.716652 -0.019215 0.000000 -14.999919 -179.999969 0.000004 0.000000 -0.000002 -0.000000 -0.000002 -0.000000
+$definebone "LeftMissileLeftHolder000" "LeftForearm" 17.029915 -5.432346 1.243223 0.000057 -0.000056 179.999985 0.000000 0.000000 0.000000 -0.000000 -0.000002 -0.000000
+$definebone "LeftMissileRightHolder000" "LeftForearm" 17.029911 -5.432354 -1.280056 0.000057 -0.000056 179.769119 0.000000 0.000000 0.000000 -0.000000 -0.000002 -0.000000
+$definebone "LeftMissile000" "LeftForearm" 16.873472 -6.062996 -0.023180 0.000057 -0.000056 179.999985 0.000000 0.000000 0.000002 -0.000000 -0.000002 -0.000000
+$definebone "LeftMissileTrap120" "LeftForearm" 12.681961 3.402981 -5.876772 12.952514 7.630769 -59.132515 0.000000 0.000000 -0.000004 -0.000000 0.000001 0.000002
+$definebone "LeftMissileLeftHolder120" "LeftForearm" 17.034611 1.668922 -5.394934 0.000057 0.000059 -59.999969 0.000000 0.000000 0.000000 -0.000001 0.000001 0.000000
+$definebone "LeftMissileRightHolder120" "LeftForearm" 17.034599 3.854115 -4.133314 0.000057 0.000059 -59.999969 0.000000 0.000000 0.000000 -0.000001 0.000001 0.000000
+$definebone "LeftMissile120" "LeftForearm" 16.878189 3.072716 -5.312654 0.000057 0.000059 -59.999969 0.000000 0.000000 -0.000004 -0.000001 0.000001 0.000000
+$definebone "LeftMissileTrap240" "LeftForearm" 12.681961 3.402977 5.839943 -12.952569 7.630769 59.132568 0.000000 0.000000 0.000000 0.000000 0.000001 0.000007
+$definebone "LeftMissileLeftHolder240" "LeftForearm" 17.034603 3.854115 4.096493 0.000000 0.000059 60.000031 0.000000 0.000000 0.000000 0.000002 0.000001 0.000000
+$definebone "LeftMissileRightHolder240" "LeftForearm" 17.034595 1.668919 5.358114 0.000000 0.000059 60.000031 0.000000 0.000000 0.000000 0.000002 0.000001 0.000000
+$definebone "LeftMissile240" "LeftForearm" 16.878187 3.072712 5.275831 0.000000 0.000059 60.000031 0.000000 0.000000 0.000000 0.000002 0.000001 0.000000
+$definebone "LeftArmSidePiston" "LeftArm" 7.833870 1.293741 -5.699636 0.000058 23.903683 -179.999969 0.000008 0.000000 0.000000 -0.000000 0.000002 0.000000
+$definebone "LeftArmSidePistonShaft" "LeftArmSidePiston" 6.802536 -0.000002 0.000000 -0.000000 0.000002 0.000057 -0.000004 0.000000 0.000000 -0.000000 0.000002 0.000000
+$definebone "LeftArmPiston" "LeftArm" 5.031570 4.153337 -0.018419 0.000000 -40.827656 -179.999969 0.000004 0.000000 0.000000 -0.000000 0.000000 -0.000000
+$definebone "LeftArmSidePistonArm" "LeftArm" 22.134720 0.022499 -5.699644 -0.000058 153.509659 0.000000 -0.000002 0.000000 0.000000 -0.000000 -0.000002 0.000000
+$definebone "LeftShoulderTwist1" "LeftShoulder" 12.000001 -0.000001 -0.000015 0.000056 0.000000 0.000001 0.000000 -0.000001 -0.000008 -0.000000 0.000000 0.000001
+$definebone "LeftShoulderPlate" "LeftShoulder" 20.018169 -3.606294 7.685318 29.598816 -111.583687 -115.612480 0.000000 0.000000 0.000000 -0.000000 0.000006 -0.000002
+$definebone "HumpBack" "Spine2" 9.429714 -7.673790 -6.660092 -69.458138 85.222305 -142.571091 0.000000 -0.000001 0.000000 0.000003 0.000000 -0.000002
+$definebone "UpperBackSpike" "HumpBack" -4.237553 2.029274 -1.930008 52.301876 137.222076 -46.380814 0.000000 0.000000 0.000000 -0.000000 -0.000002 -0.000003
+$definebone "UpperBackSpike1" "UpperBackSpike" 8.077438 0.000002 0.000000 -0.000000 -0.000002 -0.000003 0.000000 0.000002 -0.000000 -0.000000 -0.000002 -0.000003
+$definebone "UpperBackSpike2" "UpperBackSpike1" 6.909500 0.000000 0.000001 -0.000000 -0.000002 -0.000003 0.000000 0.000000 0.000000 -0.000000 -0.000002 -0.000003
+$definebone "UpperBackSpike3" "UpperBackSpike2" 9.724091 0.000008 0.000002 -0.000000 -0.000060 -0.000003 0.000000 0.000000 0.000000 -0.000000 -0.000001 -0.000003
+$definebone "BackSpike" "Spine2" -3.767208 -10.581497 -4.514327 -4.841151 -103.790619 -17.664745 0.000000 0.000000 0.000000 0.000000 -0.000001 -0.000001
+$definebone "BackSpike1" "BackSpike" 8.412537 0.000004 0.000001 0.000000 -0.000001 -0.000001 0.000008 0.000004 0.000000 0.000000 -0.000001 -0.000001
+$definebone "BackSpike2" "BackSpike1" 10.607216 0.000008 0.000001 0.000000 -0.000001 -0.000001 0.000000 -0.000004 0.000000 0.000000 -0.000001 -0.000001
+$definebone "FrontTentacle1" "hips" 3.482530 -10.525920 5.596367 -0.000019 -90.000015 90.000015 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "FrontTentacle2" "FrontTentacle1" 4.769170 0.000000 0.000001 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "FrontTentacle3" "FrontTentacle2" 5.093771 -0.000004 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "FrontTentacle4" "FrontTentacle3" 4.070024 0.000000 0.000001 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "FrontTentacle5" "FrontTentacle4" 4.045057 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000004 0.000000 -0.000000 0.000000 0.000000
+$definebone "FrontTentacle6" "FrontTentacle5" 3.246029 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "FrontTentacle7" "FrontTentacle6" 3.745422 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "RightClaw1" "FrontTentacle7" 5.437576 -0.058453 5.235242 -29.863708 0.000000 -92.337021 0.000000 0.000001 0.000000 -0.000000 0.000002 0.000000
+$definebone "RightClaw2" "RightClaw1" 6.364933 -0.350564 -0.019920 -0.767592 17.803288 -0.246543 0.000000 -0.000000 0.000000 -0.000000 0.000004 0.000000
+$definebone "LeftClaw1" "FrontTentacle7" 4.984543 -0.643299 -5.464442 30.749498 0.000000 89.442894 0.000000 0.000000 0.000000 -0.000000 0.000002 -0.000000
+$definebone "LeftClaw2" "LeftClaw1" 6.492882 -0.365733 0.059341 0.390356 16.880543 0.118488 0.000000 -0.000000 0.000004 -0.000000 0.000003 -0.000000
+$definebone "UpperClaw1" "FrontTentacle7" 5.749031 4.513771 -0.324828 -0.000000 26.678635 -179.627777 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000
+$definebone "UpperClaw2" "UpperClaw1" 6.593292 -0.039837 -0.000001 -0.000000 12.430147 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000002 -0.000000
+$definebone "LowerClaw1" "FrontTentacle7" 5.726395 -4.996399 0.072206 -0.000000 -32.187675 -2.462401 0.000000 0.000000 0.000000 0.000000 0.000005 -0.000000
+$definebone "LowerClaw2" "LowerClaw1" 6.826046 -0.196430 0.000001 0.000000 16.029530 0.000000 -0.000002 0.000000 0.000000 0.000000 0.000001 0.000000
+$definebone "FrontSpike" "FrontTentacle7" 18.920769 -0.531643 -0.392541 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "BellyButton" "hips" 3.482530 -9.002430 5.596367 -0.000019 -90.000015 90.000015 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+
+
+// Called when bullets or physics touch the model
+$SurfaceProp "flesh"
+
+// Used for non-hitbox traces
+$Contents "solid"
+
+// The degrees for how far the eyes can look
+$MaxEyeDeflection 90
+
+// Directory for textures
+$CDMaterials "models/cpthazama/kf2/patriarch/"
+
+// Collision box
+$CBox 0 0 0 0 0 0
+
+//Bound box (min x) (min y) (min z) | (max x) (max y) (max z)
+$BBox -35 -35 0 35 35 120
+
+// Sets the min max z for a pose parameter
+$PoseParameter "move_yaw" -180 180 0
+
+$ikchain "rfoot" "RightFoot" knee 0 0 0
+$ikchain "lfoot" "LeftFoot" knee 0 0 0
+
+// ------------------------------- POSE PARAMETERS -------------------------------
+
+$Sequence "subtract_" {
+    "aimcenter.smd"
+    fadein 0.2
+    fadeout 0.2
+    fps 30
+    loop
+    hidden
+}
+
+$Animation aimleft "aimleft.smd" subtract "subtract_" 0 frames 0 0
+$Animation aimcenter "aimcenter.smd" subtract "subtract_" 0 frames 0 0
+$Animation aimright "aimright.smd" subtract "subtract_" 0 frames 0 0
+$Animation aimup "aimup.smd" subtract "subtract_" 0 frames 0 0
+$Animation aimdown "aimdown.smd" subtract "subtract_" 0 frames 0 0
+
+$Sequence "aim_pitch" {
+    "aimup"
+    "aimcenter"
+    "aimdown"
+    fps 30
+    delta
+    blendwidth 3
+    blendcenter aimcenter
+    blend "aim_pitch" -90 90
+    autoplay
+}
+
+$Sequence "aim_yaw" {
+    "aimright"
+    "aimcenter"
+    "aimleft"
+    fps 30
+    delta
+    blendwidth 3
+    blendcenter aimcenter
+    blend "aim_yaw" -90 90
+    autoplay
+}
+
+// ------------------------------- BONE WEIGHTS -------------------------------
+
+$WeightList "weights_gesture" {
+	"Spine" 1
+	"Spine1" 1
+	"Spine2" 1
+	"neck" 1
+	"head" 1
+	"Jaw" 1
+	"Left_LowerLip" 1
+	"Lip_Lower" 1
+	"Right_LowerLip" 1
+	"Left_Eyebrow" 1
+	"EyeBrow" 1
+	"Right_Eyebrow" 1
+	"Left_TopEyelid" 1
+	"Right_TopEyelid" 1
+	"Left_Eye" 1
+	"Right_Eye" 1
+	"Left_BottomEyelid" 1
+	"Right_BottomEyelid" 1
+	"Left_UpperLip" 1
+	"Lip_Upper" 1
+	"Right_UpperLip" 1
+	"Left_LipCorner" 1
+	"Right_LipCorner" 1
+	"RightShoulder" 1
+	"RightArm" 1
+	"RightForearm" 1
+	"RightHand" 1
+"RightForearm"                  1
+"RightHand"                     1
+"RightInHandPinky"              1
+"RightHandPinky1"               1
+"RightHandPinky2"               1
+"RightHandPinky3"               1
+"RightInHandRing"               1
+"RightHandRing1"                1
+"RightHandRing2"                1
+"RightHandRing3"                1
+"RightInHandIndex"              1
+"RightHandIndex1"               1
+"RightHandIndex2"               1
+  "RightHandIndex3"               1
+  "RightHandThumb1"               1
+  "RightHandThumb2"               1
+  "RightHandThumb3"               1
+  "RightForeArmTwist1"            1
+  "RightArmTwist1"                1
+  "RightArmSpike"                 1
+  "RightArmSpike1"                1
+  "RightArmSpike2"                1
+  "RightArmSpike3"                1
+  "RightArmSpike4"                1
+  "LeftShoulder"                  1
+  "LeftArm"                       1
+  "LeftForearm"                   1
+  "BarrelSpinner"                 1
+  "MagazineTrail"                 1
+ "LeftArmPistonShaft"            1
+ "LeftMissileTrap000"            1
+ "LeftMissileLeftHolder000"      1
+ "LeftMissileRightHolder000"     1
+ "LeftMissile000"                1
+ "LeftMissileTrap120"            1
+ "LeftMissileLeftHolder120"      1
+ "LeftMissileRightHolder120"     1
+ "LeftMissile120"                1
+ "LeftMissileTrap240"            1
+ "LeftMissileLeftHolder240"      1
+ "LeftMissileRightHolder240"     1
+ "LeftMissile240"                1
+ "LeftArmSidePiston"             1
+ "LeftArmSidePistonShaft"       1
+ "LeftArmPiston"                 1
+ "LeftArmSidePistonArm"          1
+ "LeftShoulderTwist1"            1
+ "LeftShoulderPlate"             1
+ "HumpBack"                      1
+ "UpperBackSpike"               1
+ "UpperBackSpike1"              1
+ "UpperBackSpike2"              1
+ "UpperBackSpike3"              1
+ "BackSpike"                     1
+ "BackSpike1"                   1
+ "BackSpike2"                   1
+ "FrontTentacle1"                 1
+ "FrontTentacle2"               1
+ "FrontTentacle3"               1
+ "FrontTentacle4"               1
+ "FrontTentacle5"               1
+ "FrontTentacle6"               1
+ "FrontTentacle7"               1
+ "RightClaw1"                   1
+ "RightClaw2"                   1
+ "LeftClaw1"                    1
+ "LeftClaw2"                    1
+ "UpperClaw1"                   1
+ "UpperClaw2"                   1
+ "LowerClaw1"                   1
+ "LowerClaw2"                   1
+ "FrontSpike"                   1
+ "BellyButton"                    1
+}
+
+$WeightList "weights_gesture_fire" {
+  "LeftShoulder"                  1
+  "LeftArm"                       1
+  "LeftForearm"                   1
+  "BarrelSpinner"                 1
+  "MagazineTrail"                 1
+ "LeftArmPistonShaft"            1
+ "LeftMissileTrap000"            1
+ "LeftMissileLeftHolder000"      1
+ "LeftMissileRightHolder000"     1
+ "LeftMissile000"                1
+ "LeftMissileTrap120"            1
+ "LeftMissileLeftHolder120"      1
+ "LeftMissileRightHolder120"     1
+ "LeftMissile120"                1
+ "LeftMissileTrap240"            1
+ "LeftMissileLeftHolder240"      1
+ "LeftMissileRightHolder240"     1
+ "LeftMissile240"                1
+ "LeftArmSidePiston"             1
+ "LeftArmSidePistonShaft"       1
+ "LeftArmPiston"                 1
+ "LeftArmSidePistonArm"          1
+ "LeftShoulderTwist1"            1
+ "LeftShoulderPlate"             1
+}
+
+//-------------------------------------- ANIMATIONS --------------------------------------\\
+
+$Sequence "idle" {
+	"animations/idle.smd"
+	activity "ACT_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	loop
+}
+
+$Sequence "idle_fire" {
+	"animations/idle_fire.smd"
+	activity "ACT_IDLE_ONFIRE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	loop
+}
+
+$Sequence "idle_gun" {
+	"animations/idle_gun.smd"
+	activity "ACT_IDLE_ANGRY" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	loop
+}
+
+$Sequence "entrance" {
+	"animations/entrance.smd"
+	activity "ACT_ENTRANCE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack_charge1" {
+	"animations/attack_charge1.smd"
+	activity "ACT_MELEE_ATTACK2" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack_charge2" {
+	"animations/attack_charge2.smd"
+	activity "ACT_MELEE_ATTACK2" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack_heavy1" {
+	"animations/attack_heavy1.smd"
+	activity "ACT_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack_heavy2" {
+	"animations/attack_heavy2.smd"
+	activity "ACT_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack_heavy3" {
+	"animations/attack_heavy3.smd"
+	activity "ACT_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack_heavy4" {
+	"animations/attack_heavy4.smd"
+	activity "ACT_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "attack1" {
+	"animations/attack1.smd"
+	activity "ACT_GESTURE_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	weightlist "weights_gesture"
+}
+
+$Sequence "attack2" {
+	"animations/attack2.smd"
+	activity "ACT_GESTURE_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	weightlist "weights_gesture"
+}
+
+$Sequence "attack3" {
+	"animations/attack3.smd"
+	activity "ACT_GESTURE_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	weightlist "weights_gesture"
+}
+
+$Sequence "attack4" {
+	"animations/attack4.smd"
+	activity "ACT_GESTURE_MELEE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	weightlist "weights_gesture"
+}
+
+$Sequence "gun_shoot" {
+	"animations/gun_shoot.smd"
+	activity "ACT_GESTURE_RANGE_ATTACK1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	weightlist "weights_gesture_fire"
+}
+
+$Sequence "heal1" {
+	"animations/heal1.smd"
+	activity "ACT_HEAL_1" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "heal2" {
+	"animations/heal2.smd"
+	activity "ACT_HEAL_2" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "heal3" {
+	"animations/heal3.smd"
+	activity "ACT_HEAL_3" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "pre_gun" {
+	"animations/pre_gun.smd"
+	activity "ACT_PRE_GUN" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "pre_mortar" {
+	"animations/pre_mortar.smd"
+	activity "ACT_PRE_MORTAR" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "pre_rocket" {
+	"animations/pre_rocket.smd"
+	activity "ACT_PRE_ROCKET" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "mortar" {
+	"animations/mortar.smd"
+	activity "ACT_MORTAR" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "rocket" {
+	"animations/rocket.smd"
+	activity "ACT_ROCKET" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "turnleft" {
+	"animations/turnleft.smd"
+	activity "ACT_TURN_LEFT" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "turnright" {
+	"animations/turnright.smd"
+	activity "ACT_TURN_RIGHT" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+}
+
+$Sequence "victory" {
+	"animations/victory.smd"
+	activity "ACT_VICTORY" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 15
+	walkframe 300 LX LY
+}
+
+$Sequence "walk" {
+	"animations\walk_b.smd"
+	"animations\walk_r.smd"
+	"animations\walk_f.smd"
+	"animations\walk_l.smd"
+	"animations\walk_b.smd"
+	activity "ACT_WALK" 1
+	fadein 0.2
+	fadeout 0.2
+	blend "move_yaw" -180 180
+	blendwidth 5
+	node "walk"
+	fps 15
+	loop
+	walkframe 300 LX LY
+}
+
+$Sequence "run" {
+	"animations\walk_b.smd"
+	"animations\walk_r.smd"
+	"animations\run.smd"
+	"animations\walk_l.smd"
+	"animations\walk_b.smd"
+	activity "ACT_RUN" 1
+	fadein 0.2
+	fadeout 0.2
+	blend "move_yaw" -180 180
+	blendwidth 5
+	node "run"
+	fps 15
+	loop
+	walkframe 300 LX LY
+}
