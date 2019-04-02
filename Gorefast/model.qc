@@ -1,5 +1,5 @@
 // Saved directory for model when initialized in game. If this is changed after the model is compiled it will make an error
-$ModelName "cpthazama/kf2/zed.mdl"
+$ModelName "cpthazama/kf2/gorefast.mdl"
 
 // Makes it scaled to Garry's Mod standards
 $Scale 0.4
@@ -20,7 +20,7 @@ $Contents "solid"
 $MaxEyeDeflection 90
 
 // Directory for textures
-$CDMaterials "models/cpthazama/kf2/zed/"
+$CDMaterials "models/cpthazama/kf2/gorefast/"
 
 // Collision box
 $CBox 0 0 0 0 0 0
@@ -87,16 +87,10 @@ $Sequence "idle" {
 }
 
 $Sequence "walk" {
-	"animations\walk_b.smd"
-	"animations\walk_r.smd"
-	"animations\walk_f.smd"
-	"animations\walk_l.smd"
-	"animations\walk_b.smd"
+	"animations\walk.smd"
 	activity "ACT_WALK" 1
 	fadein 0.2
 	fadeout 0.2
-	blend "move_yaw" -180 180
-	blendwidth 5
 	node "walk"
 	fps 15
 	loop
@@ -104,17 +98,11 @@ $Sequence "walk" {
 }
 
 $Sequence "run" {
-	"animations\walk_b.smd"
-	"animations\walk_r.smd"
 	"animations\run.smd"
-	"animations\walk_l.smd"
-	"animations\walk_b.smd"
 	activity "ACT_RUN" 1
 	fadein 0.2
 	fadeout 0.2
-	blend "move_yaw" -180 180
-	blendwidth 5
-	node "run"
+	node "walk"
 	fps 15
 	loop
 	walkframe 300 LX LY
